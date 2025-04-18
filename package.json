@@ -1,0 +1,16 @@
+{
+  "name": "desafio_final",
+  "version": "1.0.0",
+  "main": "codecept.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "allure-codeceptjs": "^3.2.1",
+    "allure-commandline": "^2.33.0"
+  }
+}

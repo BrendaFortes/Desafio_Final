@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","31421","Consulta de un articulo entre pagina","Busqueda","Thu Apr 17 20:02:11 PDT 2025","passed","Thu Apr 17 20:02:43 PDT 2025","","","",""
+"","10611","Seleccionar todas las opciones de apariencia","Cambiar apariencia","Thu Apr 17 20:03:10 PDT 2025","passed","Thu Apr 17 20:03:21 PDT 2025","","","",""
+"","9587","Navego en opciones de menu lateral","Menu lateral","Thu Apr 17 20:04:09 PDT 2025","passed","Thu Apr 17 20:04:19 PDT 2025","","","",""
+"","11572","Ingresar información de incio de sesion","Inicio de sesion","Thu Apr 17 20:03:38 PDT 2025","passed","Thu Apr 17 20:03:50 PDT 2025","","","",""
+"","13680","Cambiar resultados de busqueda","Mockeo","Thu Apr 17 20:04:44 PDT 2025","passed","Thu Apr 17 20:04:57 PDT 2025","","","",""

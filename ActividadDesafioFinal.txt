@@ -1,0 +1,9 @@
+Automatizar 5 escenarios diferentes, cada uno con una interacción real
+con la interfaz y validación, y uno de ellos incluye mockeo de una
+respuesta API
+
+Debe tener la estructura features, steps, y pages
+
+Debe presentar el Allure Report con 5 test cases
+
+Repo o rama de desafio final
