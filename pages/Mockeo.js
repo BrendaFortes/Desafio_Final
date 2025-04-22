@@ -4,24 +4,49 @@ class mockeo {
     constructor() {
         //Declaración de variables
         this.fields = {
-            barraDeBusqueda: '//input[@aria-label="Buscar en Wikipedia"]',
-            articuloBusqueda: 'Vellereophyton',
-            selecciona: '//a[@class="cdx-menu-item__content"]',
-            imagenSeleccionada: '//img[@class="mw-file-element"]'
+            documentacion: '//a[@name="/documentation"]'
         }
     }
 
+    inicial(){
+        I.amOnPage('https://rickandmortyapi.com')
+    }
+
     apartadoMockeo(){
-        I.waitForElement(this.fields.barraDeBusqueda, 3)
-        I.wait(2)
-        I.fillField(this.fields.barraDeBusqueda, this.fields.articuloBusqueda)
-        I.wait(2)
-        I.click(this.fields.selecciona)
+        I.click(this.fields.documentacion)
+        I.wait(3)
+        I.mockRoute('https://rickandmortyapi.com/page-data/documentation/page-data.json', async (route) => {
+            await route.fulfill({
+                status: 200,
+                contentType: 'application/json',
+                body: JSON.stringify({
+                    "componentChunkName": "component---src-pages-documentation-mdx",
+                    "path": "/documentation/",
+                    "result": {
+                        "pageContext": {
+                            "frontmatter": {
+                                //"title": "Documentation",
+                                "title": "BLA BLA BLA.",
+                                "slug": "/documentation",
+                                "github": "/documentation.mdx",
+                                "description": "This documentation will help you get familiar with the resources of the Rick and Morty API and show you how to make different queries.",
+                                "cover": "/images/docs.jpeg"
+                            }
+                        }
+                    },
+                    "staticQueryHashes": [
+                        "1506520932",
+                        "2138676555",
+                        "48135295"
+                    ]
+                })
+            })
+        })
     }
 
     verificarCambio(){
-        I.click(this.fields.imagenSeleccionada)
-        I.wait(2)
+        I.amOnPage('https://rickandmortyapi.com/documentation')
+        I.wait(3)
     }
 }
 module.exports = new mockeo();
