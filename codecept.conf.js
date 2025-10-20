@@ -27,9 +27,9 @@ exports.config = {
     features: "./features/*.feature",
     //steps: ["./steps/loginSteps.js"],
     //steps: ["./steps/aparienciaSteps.js"],
-    //steps: ["./steps/busquedaSteps.js"],
+    steps: ["./steps/busquedaSteps.js"],
     //steps: ["./steps/menuSteps.js"],
-    steps: ["./steps/mockeoSteps.js"],
+    //steps: ["./steps/mockeoSteps.js"],
   },
   plugins:{
     allure: {
